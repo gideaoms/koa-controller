@@ -1,4 +1,5 @@
 # @gideaoms/koa-controller
+*Inspired by [Hapi](https://hapi.dev/)*
 
 ## Installation
 ```bash

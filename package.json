@@ -1,5 +1,5 @@
 {
-  "name": "@koa/controller",
+  "name": "@gideaoms/controller",
   "version": "0.0.1",
   "main": "dest/index.js",
   "files": [
@@ -8,6 +8,10 @@
   "license": "MIT",
   "author": {
     "name": "Gideão MS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gideaoms/koa-controller.git"
   },
   "types": "dest",
   "keywords": [

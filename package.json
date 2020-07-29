@@ -1,0 +1,45 @@
+{
+  "name": "@koa/controller",
+  "version": "0.0.1",
+  "main": "dest/index.js",
+  "files": [
+    "dest"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Gideão MS"
+  },
+  "types": "dest",
+  "keywords": [
+    "koa",
+    "node",
+    "controller",
+    "router",
+    "validation"
+  ],
+  "scripts": {
+    "dev": "ts-node-dev example/index.ts",
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@types/hapi__joi": "^17.1.4",
+    "@types/koa": "^2.11.3",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.1",
+    "@typescript-eslint/eslint-plugin": "^3.7.1",
+    "@typescript-eslint/parser": "^3.7.1",
+    "eslint": "^7.5.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "koa": "^2.13.0",
+    "koa-compose": "^4.1.0",
+    "koa-router": "^9.1.0",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  }
+}

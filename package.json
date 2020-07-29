@@ -1,5 +1,5 @@
 {
-  "name": "koa_controller",
+  "name": "@koa/controller",
   "version": "0.0.1",
   "main": "dest/index.js",
   "files": [

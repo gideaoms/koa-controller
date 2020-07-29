@@ -13,8 +13,8 @@ type Opts = {
     params?: ObjectSchema
   }
   middlewares?: Middleware[]
+  debug?: boolean
   handler: Middleware,
-  debug: boolean
 }
 
 const controller = ({ debug = false, validate, middlewares = [], handler }: Opts) => {

@@ -2,7 +2,7 @@
 
 ## Installation
 ```bash
-npm install --save @gideaoms/controller
+npm install --save koa-controller
 ```
 
 ## Usage
@@ -10,7 +10,7 @@ npm install --save @gideaoms/controller
 const Koa = require('koa')
 const Joi = require('@hapi/joi')
 const Router = require('koa-router')
-const controller = require('@gideaoms/controller')
+const controller = require('koa-controller')
 
 const app = new Koa()
 const router = new Router()

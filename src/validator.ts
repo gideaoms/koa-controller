@@ -11,9 +11,9 @@ const validator = (source: Source, schema?: ObjectSchema) =>
       }
 
       const data = {
-        body: ctx.body,
+        body: ctx.request.body,
         params: ctx.params,
-        query: ctx.query
+        query: ctx.request.query
       }
       const { error, value } = schema.validate(data[source] ?? {}, { abortEarly: false })
 
@@ -21,7 +21,9 @@ const validator = (source: Source, schema?: ObjectSchema) =>
         throw error
       }
 
-      ctx[source] = value
+      ctx.request.body = source === 'body' ? value : ctx.request.body
+      ctx.params = source === 'params' ? value : ctx.params
+      ctx.request.query = source === 'query' ? value : ctx.request.query
 
       await next()
     } catch (error) {
